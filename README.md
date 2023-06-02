@@ -6,12 +6,12 @@ It is a small Crash 2 romhack that allows you to play at various player speeds a
 - randomly changing periodically/aperiodically
 - random each spin
 
-**It is based on pal crash 2 and you need to have the Crash 2 pal rom already, what's being released is just a patch.**
+**It is based on pal crash 2 and you need to have the Crash 2 pal rom already, what's being shared is just a delta patch.**
 
 # How to use it and play
-You can apply an xdelta patch using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
-The original file is the European (PAL) release of Crash 2 (.bin). 
-If you want to make sure you are using the same original file, you can do it using certutil (Win11).
+You can apply an xdelta patch (e.g. **c2pal_speedmod_v1.xdelta**) using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
+The original file is the European (PAL) release of Crash 2 (.bin). Warning: overwrites the original file. 
+It is recommended to make sure you are using the same original file, on Win10 you can do it using **certutil**.
 ```
 PS C:\...stuff> certutil -hashfile "Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin" sha256
 SHA256 hash of Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin:
@@ -29,3 +29,10 @@ but the most interesting are following files found in **misc/gooc**:
 - **goolstdlib(2).gooc** - version of standard gool library used with previous files
 - **comp.bat** - batch file used to compile output GOOL nsentry files that are used in actual levels, 
                - uses mandude's gooc compiler, outputs several versions used by levels with special behavior (bear, hangrail etc)
+
+# How to make changes and experiment
+In order to update the player modifier object in a level, you need to replace the level's SModC entry using CrashEdit or Dr.NSF.
+Each level has its own copy of SModC, therefore in order to apply the change to the entire game you need to replace it in every NSF file separately.
+To compile SModC, use gooc or the batch file (both CLI only). For more info about gooc see https://github.com/ManDude/goocdump .
+
+If you have any questions or suggestions, feel free to create an issue.
