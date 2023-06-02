@@ -2,15 +2,13 @@
 It is a small Crash 2 romhack that allows you to play at various player speeds and scales in several modes, including:
 - custom (control speed and scale any time, separately)
 - random each level or warp room
-- random each fruit
-- random each crate
-- random each item
+- random each fruit, crate and/or
 - randomly changing periodically/aperiodically
 - random each spin
 
 **It is based on pal crash 2 and you need to have the Crash 2 pal rom already, what's being released is just a patch.**
 
-# How to use
+# How to use it and play
 You can apply an xdelta patch using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
 The original file is the European (PAL) release of Crash 2 (.bin). 
 If you want to make sure you are using the same original file, you can do it using certutil (Win11).
@@ -29,4 +27,5 @@ but the most interesting are following files found in **misc/gooc**:
 - **goocLSe2C.gooc** and **SModC.gooc** - source files for the title screen and the actual player object manipulator
 - **smod_util.gooc** - utility file that defines constants, generic subs and subs for setting/getting values
 - **goolstdlib(2).gooc** - version of standard gool library used with previous files
-- **comp.bat** - batch file used to compile output GOOL nsentry files that are used in levels, uses mandude's gooc compiler
+- **comp.bat** - batch file used to compile output GOOL nsentry files that are used in actual levels, 
+               - uses mandude's gooc compiler, outputs several versions used by levels with special behavior (bear, hangrail etc)
