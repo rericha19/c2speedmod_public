@@ -8,6 +8,9 @@ It is a small Crash 2 romhack that allows you to play at various player speeds a
 
 **It is based on pal crash 2 and you need to have the Crash 2 pal rom already, what's being shared is just a delta patch.**
 
+# Video
+https://youtu.be/KAK_-GjRT0g
+
 # How to use it and play
 You can apply an xdelta patch (e.g. **c2pal_speedmod_v1.xdelta**) using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
 The original file is the European (PAL) release of Crash 2 (.bin). Warning: overwrites the original file. 
