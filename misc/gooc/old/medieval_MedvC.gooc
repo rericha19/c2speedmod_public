@@ -1,0 +1,628 @@
+#include "../goolstdlib.gooc"
+
+#gool MedvC 44 1
+
+#font FONT_SMALL [Cr20T]
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 //  
+#char 0x808080 0 1 1 0 608 16 16 16 400 0 // !
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // "
+#char 0x808080 0 1 1 0 1008 64 16 16 400 0 // #
+#char 0x808080 0 1 1 0 976 16 16 16 400 0 // $
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // %
+#char 0x141414 0 1 7 10 136 12 4 4 400 0 // &
+#char 0x808080 0 1 1 0 992 80 16 16 300 0 // '
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // (
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // )
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // *
+#char 0x808080 0 1 1 0 1008 96 16 16 400 0 // +
+#char 0x808080 0 1 1 0 992 64 16 16 300 0 // ,
+#char 0x808080 0 1 1 0 992 112 16 16 400 0 // -
+#char 0x808080 0 1 1 0 992 96 16 16 250 0 // .
+#char 0x808080 0 1 4 0 832 96 32 32 470 0 // /
+#char 0x808080 0 1 1 0 448 16 16 16 400 0 // 0
+#char 0x808080 0 1 1 0 464 16 16 16 400 0 // 1
+#char 0x808080 0 1 1 0 480 16 16 16 400 0 // 2
+#char 0x808080 0 1 1 0 496 16 16 16 400 0 // 3
+#char 0x808080 0 1 1 0 512 16 16 16 400 0 // 4
+#char 0x808080 0 1 1 0 528 16 16 16 400 0 // 5
+#char 0x808080 0 1 1 0 544 16 16 16 400 0 // 6
+#char 0x808080 0 1 1 0 560 16 16 16 400 0 // 7
+#char 0x808080 0 1 1 0 576 16 16 16 400 0 // 8
+#char 0x808080 0 1 2 0 592 16 16 16 400 0 // 9
+#char 0x808080 0 1 1 0 992 48 16 16 300 0 // :
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // ;
+#char 0x808080 0 1 4 0 416 16 32 16 800 0 // <
+#char 0x808080 0 3 3 0 416 8 8 8 400 0 // =
+#char 0x808080 0 1 4 0 384 16 32 16 800 0 // >
+#char 0x808080 0 1 1 0 992 32 16 16 400 0 // ?
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // @
+#char 0x808080 0 1 1 0 624 16 16 16 400 0 // A
+#char 0x808080 0 1 1 0 640 16 16 16 400 0 // B
+#char 0x808080 0 1 1 0 656 16 16 16 400 0 // C
+#char 0x808080 0 1 1 0 672 16 16 16 400 0 // D
+#char 0x808080 0 1 1 0 688 16 16 16 400 0 // E
+#char 0x808080 0 1 1 0 704 16 16 16 400 0 // F
+#char 0x808080 0 1 1 0 720 16 16 16 400 0 // G
+#char 0x808080 0 1 1 0 736 16 16 16 400 0 // H
+#char 0x808080 0 1 1 0 752 16 16 16 400 0 // I
+#char 0x808080 0 1 1 0 768 16 16 16 400 0 // J
+#char 0x808080 0 1 1 0 784 16 16 16 400 0 // K
+#char 0x808080 0 1 1 0 800 16 16 16 400 0 // L
+#char 0x808080 0 1 1 0 816 16 16 16 400 0 // M
+#char 0x808080 0 1 1 0 832 16 16 16 400 0 // N
+#char 0x808080 0 1 1 0 848 16 16 16 400 0 // O
+#char 0x808080 0 1 1 0 864 16 16 16 400 0 // P
+#char 0x808080 0 1 1 0 880 16 16 16 400 0 // Q
+#char 0x808080 0 1 1 0 896 16 16 16 400 0 // R
+#char 0x808080 0 1 1 0 912 16 16 16 400 0 // S
+#char 0x808080 0 1 1 0 928 16 16 16 400 0 // T
+#char 0x808080 0 1 1 0 944 16 16 16 400 0 // U
+#char 0x808080 0 1 1 0 960 48 16 16 400 0 // V
+#char 0x808080 0 1 1 0 960 32 16 16 400 0 // W
+#char 0x808080 0 1 1 0 960 16 16 16 400 0 // X
+#char 0x808080 0 1 1 0 976 48 16 16 400 0 // Y
+#char 0x808080 0 1 1 0 976 32 16 16 400 0 // Z
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // [
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // \
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // ]
+#char 0x808080 0 1 1 0 1008 80 16 16 400 0 // ^
+#char 0x808080 0 1 1 0 1008 112 16 16 400 0 // _
+#char 0x808080 0 1 1 0 992 80 16 16 300 0 // `
+
+
+#text NAME_STRING				FONT_SMALL[Cr20T]
+"TEMPEST TROUBLE"
+"LEVEL 16"
+
+#anim BOX_CONTINUE_IRON 			[Bc20V] 1 0
+#anim ANIM_FROG						[FrobV] 35 1
+
+#anim ANIM_KISS1					[Cf1bV] 12 0
+#anim ANIM_KISS2					[Cf2bV] 4 0
+#anim ANIM_KISS3					[Cf3bV] 2 0
+#anim ANIM_KISS4					[Cf4bV] 2 0
+#anim ANIM_KISS5					[Cf5bV] 2 0
+#anim ANIM_KISS6					[Cf6bV] 3 0
+
+#anim ANIM_CRASH_HAT				[Wh0cV] 7 1
+
+#spawn S_BONUS_FIX			BonusFix			// 0
+#spawn S_WILLY_FIX			WillyFix			// 1
+#spawn S_AUTOCHECK			AutoCheckPoint		// 2
+#spawn S_WIZ_DEATH			Wizard_Death		// 3
+#spawn S_KISS_DEATH			KissDeath			// 4
+#spawn S_DUMMY				Dummy				// 5
+#spawn S_KN_WATCH_TW		Obj_Roty_Tweak		// 6
+#spawn S_DISP_NAME			Disp_Name			// 7
+
+expr SP_DEF = 87
+expr SP_FAST = 116		// ~1.33x
+
+expr BIG_WIZ_ID = 486.0
+
+var savevfx, tid, wf, savefxvol, lvl_no, veloc, prevx, prevz, curx, curz
+
+state BonusFix {
+	code () {
+		animseq = 0
+		var savevfx = player->vfx
+		do {
+			playframe(0)
+			player->vfx = player->vfx & 0xFFFF00FF
+		} while (1)
+	}
+	
+	/*
+	event (e, a) {
+		if (e == EventDespawn) {
+			player->vfx = savevfx
+			accevcstate(dead_state)
+		}
+	}*/
+}
+
+state dead_state {
+	code () {}
+}
+
+sub set_coords_from_vvec() {
+	x = vecx
+	y = vecy
+	z = vecz
+}
+
+state WillyFix {
+	statusc 0x22
+	stateflag 0x40003
+
+	code () {
+		playnull()
+		animseq = getanim(ANIM_CRASH_HAT)
+		//animseq = 0
+
+		SetScale(0.65S)
+
+		// came thru necro portal
+		if (GLOBAL_20 == 0x2B00) {
+			GLOBAL_20 = 0xD00
+		}
+		// came thru w3 ruin portal
+		if (GLOBAL_20 == 0x1600) {
+			GLOBAL_20 = 0xF00
+		}
+
+		// lighc
+		spawn2(60, 0, 1, 1.0, 8)
+
+		veloc = SP_DEF
+		var sca = 0.87S
+
+		var hat_weared = 0
+		do {
+			var pxold = player->x
+			var pyold = player->y
+			var pzold = player->z
+
+			zindex = player->zindex + 6
+			roty = player->roty
+			troty = roty
+
+			if (player->stateflag == 0x8001) {
+				y = player->y + 10m
+				//scaley = 0
+				hat_weared = 0
+			}
+			else if (!hat_weared) {
+				y -= 0.75m
+				if (y <= player->y + 1.5m) {
+					hat_weared = 1
+				}
+			}
+			else {
+				if (!(player->stateflag & 0x20)) {
+					getvert(0, player, 1.0)
+				}
+			}
+			//scaley = seek(scaley, 0.65S, 0.1S)
+
+			var dist_mlt, target_y
+			if (player->stateflag & 0x200000 && player->statusc & 0x40) {
+				target_y = (y + player->y + 0.75m) / 2
+				dist_mlt = 2
+			}
+			else if (player->stateflag & 0xA00000) {
+				target_y = (y + player->y + 1.0m) / 2
+				dist_mlt = 1
+			} else if (player->stateflag == 0x1020 || (player->stateflag == 0x22 && player->statusc == 0x20401022)) {
+				target_y = (y + player->y + 100.0m) / 2
+				dist_mlt = 1
+			} 
+			else {
+				target_y = (y + player->y + 1.5m) / 2
+				dist_mlt = -4
+			}
+
+			/*
+			if (player->statusb & 0x20) {
+				statusb = FLAG_COLLIDABLE | FLAG_GRAVITY | FLAG_PHYSICS_FULL | FLAG_SOLID_FULL
+				vely = 0m
+				do {
+					if (animframe < 6.0)
+						animframe = animframe + 1.0;
+					playframe(animframe)
+				} until (STATUS_GROUNDLAND || (player->stateflag == 0x8001 || player->stateflag == 0x42408))		
+			}
+			else 
+			*/
+			{
+				statusb = 0
+				if (hat_weared) {
+					y = target_y
+				}
+				x = ((x + (player->x * 1)) / 2) + (sin(roty) * dist_mlt)
+				z = ((z + (player->z * 1)) / 2) + (cos(roty) * dist_mlt)
+				playframe(0)
+			}
+
+			var pxnew = player->x
+			var pynew = player->y
+			var pznew = player->z
+
+			if (player->scalex < 0)
+				player->scalex = -sca;
+			else 
+				player->scalex = sca;
+			player->scaley = sca
+			player->scalez = sca
+
+			if (player->stateflag != 0x8001 && player->stateflag != 0x42408) {
+				player->x = pxold + (((pxnew - pxold) * veloc) / 100)
+				player->y = pyold + (((pynew - pyold) * SP_DEF) / 100)
+				player->z = pzold + (((pznew - pzold) * veloc) / 100)
+			} else {
+				veloc = SP_DEF
+			}
+		} while(1)
+	}
+
+	trans {
+		prevx = curx
+		prevz = curz
+		make_things_ghost()
+		//make_things_ghost2()
+		curx = player->x
+		curz = player->z
+		vfx = player->vfx
+		colr1 = player->colr1
+		colr2 = player->colr2
+		colr3 = player->colr3
+		colg1 = player->colg1
+		colg2 = player->colg2
+		colg3 = player->colg3
+		colb1 = player->colb1
+		colb2 = player->colb2
+		colb3 = player->colb3
+		SetInvincible(parent->invincible)
+		if (player->stateflag != 0x8001 && player->stateflag != 0x42408) {
+			if (veloc > SP_DEF) {
+				if (abs(prevx - curx) > 0.04m || abs(prevz - curz) > 0.04m) {
+					if (!(frametime % 4)) {
+						save(x, y, z) {
+							x = player->x
+							y = player->y
+							z = player->z
+							spawn_particle()
+						}
+					}
+				}
+			}
+		}
+	}
+
+	event (e, a) {
+		if (e == Event80) {
+			veloc = SP_FAST
+		}
+		if (e == Event81) {
+			spawn_particle()
+		}
+	}
+}
+
+inline sub interrupter_get_stateflag_check(tgt) {
+	interrupter = objectget(tgt)
+	if (interrupter) {
+		if (interrupter->stateflag == 0x30) {
+			interrupter = 0
+		}
+	}
+}
+
+sub make_ghost() {
+	interrupter->vfx = (interrupter->vfx & -0xFF0001) | 0x20000
+	interrupter->vfx = (interrupter->vfx & -0xFF01) | 1.0
+	interrupter->moda = 8.0
+	interrupter->colr1 = 0x5
+	interrupter->colg1 = 0x5
+	interrupter->colb1 = 0x10
+}
+
+sub make_regular() {
+	interrupter->vfx = (interrupter->vfx & -0xFF0001)
+	interrupter->vfx = (interrupter->vfx & -0xFF01) 
+	interrupter->moda = 0
+}
+
+sub ghost_util(tgt) {
+	big_wiz_moved()
+	var wiz_moved = misc
+	interrupter_get_stateflag_check(tgt)
+	if (interrupter) {
+		if (wiz_moved) {
+			interrupter->statusb |= FLAG_COLLIDABLE
+			//interrupter->statusb &= ~FLAG_INVISIBLE
+			make_regular()
+		} else {
+			interrupter->statusb &= ~FLAG_COLLIDABLE
+			//interrupter->statusb |= FLAG_INVISIBLE
+			make_ghost()
+		}
+	}
+}
+
+/*
+sub ghost_util2(tgt) {
+	interrupter_get_stateflag_check(tgt)
+	if (interrupter) {
+		interrupter->statusb |= FLAG_COLLIDABLE
+		interrupter->statusb &= ~FLAG_INVISIBLE
+		make_ghost()
+	}
+}
+*/
+
+// if wiz hasnt moved yet it makes some stuff ghostly
+sub make_things_ghost() {
+	interrupter_get_stateflag_check(BIG_WIZ_ID)
+	if (interrupter) {
+		if (GLOBAL_145 < 1.0)
+			ghost_util(61.0);
+		ghost_util(195.0)
+		ghost_util(196.0)
+		ghost_util(197.0)
+		ghost_util(199.0)
+		ghost_util(200.0)
+		ghost_util(201.0)
+		ghost_util(202.0)
+		ghost_util(204.0)
+		ghost_util(205.0)
+		ghost_util(207.0)
+		ghost_util(208.0)
+		ghost_util(211.0)
+		ghost_util(212.0)
+		ghost_util(213.0)
+	}
+}
+
+/*
+sub make_things_ghost2() {
+	interrupter_get_stateflag_check(BIG_WIZ_ID)
+	if (interrupter) {
+		ghost_util2(192.0)
+		ghost_util2(193.0)
+		ghost_util2(194.0)
+		
+		ghost_util2(400.0)
+		ghost_util2(401.0)
+		ghost_util2(402.0)
+		ghost_util2(403.0)
+		ghost_util2(404.0)
+		ghost_util2(405.0)
+		ghost_util2(406.0)
+		ghost_util2(407.0)
+	}
+}
+*/
+
+sub big_wiz_moved() {
+	misc = 0
+	interrupter = objectget(BIG_WIZ_ID)
+	if (interrupter) {
+		if (interrupter->pathprog > 1.0) {
+			misc = 1
+		}
+	}
+}
+
+sub spawn_particle() {
+	var vx, vy, vz
+	if (rand(2)) {
+		vx = rand(400.0) + 200.0
+	} else {
+		vx = -rand(400.0) + 200.0
+	}
+	if (rand(2)) {
+		vy = rand(400.0) + 200.0
+	} else {
+		vy = -rand(400.0) + 200.0
+	}
+	if (rand(2)) {
+		vz = rand(400.0) + 200.0
+	} else {
+		vz = -rand(400.0) + 200.0
+	}
+	spawn2(26, 2, 1, -1.0, vx, vy, vz)
+}
+
+
+state AutoCheckPoint {
+	code (wait_f, target_id) {
+		animseq = 0
+		tid = target_id
+		wf = wait_f
+		
+		do (var i = 0) {
+			playnull()
+			i += 1.0
+		} while (i < wf)
+		
+		var was_on_elev = false
+		var got_off_elev = false
+		
+		do {
+			playframe(0)			
+			if (player->stateflag == 0x42408)
+				was_on_elev = true;
+			else
+				got_off_elev = true;
+			
+			if (got_off_elev && was_on_elev) {
+				changestate(AutoCheckPoint_Trigger)
+			}
+		} while (1)
+	}
+	
+	trans {
+		save(interrupter) {
+			HEALTH = 0
+			interrupter = player->creator
+			sendevent(Event3, interrupter, 100.0)
+			sendevent(Event3, interrupter, 100.0)
+		}
+	}
+}
+
+state AutoCheckPoint_Trigger {
+	code () {
+		animseq = 0
+		do (var i = 0) {
+			playnull()
+			i += 1.0
+		} while (i < wf)
+				
+		interrupter = objectget(tid)
+		if (interrupter) {
+			//KillEntity()
+			sendevent(EventSpinHit, interrupter, 0)			
+		}
+	}
+	trans => state AutoCheckPoint
+}
+
+state Wizard_Death {
+	code () {
+		animseq = getanim(ANIM_FROG)
+		SetScale(8.0)
+		
+		do (var j = 0) {
+			var rnd = rand(4, 8)
+			do (var i = 0) {
+				playframe(0)
+				i += 1
+			} while (i < rnd)
+		
+			SoundPitchDefault()
+			sounddecay(0xFA)
+			soundplay([FCrbA], 1.0V)
+		
+			animframe = -1.0
+			do {
+				playframe(animframe + 1.0)
+			} while (animframe < 32.0)
+			
+			j += 1
+		} while(j < 3)
+	}
+	
+	trans {
+		unless(STATUS_FIRSTFRAME) {
+			scalex = scalex + 2.0
+			if (scalex > 16.0)
+				scalex = 16.0;
+			SetScale(scalex)
+		}
+		x = player->x
+		y = player->y + 0.5m
+		z = player->z
+		player->statusc = 0x20401022
+		if (player->stateflag == 0x8001 || player->stateflag == 0x42408) {
+			changestate(dead_state)
+		}
+	}
+}
+
+state KissDeath {
+	code() {
+		interrupter = parent->interrupter		
+		savevfx = interrupter->y
+		
+		playanim(0, ANIM_KISS1)
+		playanim(1, ANIM_KISS1)
+		playanim(2, ANIM_KISS1)
+		playanim(3, ANIM_KISS1)
+		playanim(4, ANIM_KISS1)
+		playanim(5, ANIM_KISS1)
+		playanim(6, ANIM_KISS1)
+		playanim(7, ANIM_KISS1)
+		playanim(8, ANIM_KISS1)
+		playanim(9, ANIM_KISS1)
+		playanim(10, ANIM_KISS1)
+		playanim(11, ANIM_KISS1)
+		
+		do {
+			playanim(0, ANIM_KISS6)
+		} while(1)
+	}
+	
+	trans {
+		unless(STATUS_FIRSTFRAME) {
+			roty = interrupter->roty
+			interrupter->y = y + 0.1m
+		}
+		x = player->x
+		y = player->y + 0.5m
+		z = player->z
+		player->statusc = 0x20401022
+		if (player->stateflag == 0x8001 || player->stateflag == 0x42408) {
+			changestate(dead_state)
+		}
+	}
+}
+
+state Dummy {
+	code () {
+		playnull()
+		KillEntity()
+		playnull()
+	}
+}
+
+state Obj_Roty_Tweak {
+	code (target_id, ry) {
+		animseq = 0
+		do {
+			interrupter = objectget(target_id)
+			if (interrupter) {
+				interrupter->roty = ry
+				interrupter->stalltime = ry
+				if (interrupter->child) {
+					save(interrupter) {
+						interrupter = interrupter->child
+						interrupter->roty = ry
+					}
+				}
+			}
+			playframe(0)
+		} while (1)
+	}
+}
+
+
+state Disp_Name {
+	stateflag 0x100001
+	statusc 2
+	code (arg6, arg5, arg4, arg3, arg2, arg1, arg0) {
+		statusb = 0x40000
+		vfx = (vfx & -0x100) | 6		
+		SetTextColor(0, 0x138, 0x17F, 0x138, 0x138, 0x17F);
+		zindex = parent->zindex		
+		scalex = 0xA3
+		scaley = 0x103
+		scalez = 0x1000	
+		
+		animframe = 0
+		lvl_no = 0
+		if (arg1 == 0x700) {
+			animframe = 1.0
+			lvl_no = 1
+		}
+		
+		x = arg4
+		y = arg3
+		animseq = getanim(NAME_STRING)
+		sleepframe(animframe)
+	}
+	event => sub event_handler_common
+	
+	trans {
+		unless(STATUS_FIRSTFRAME) {
+			if (lvl_no || (frametime & 31)) {
+				SetTextColor(0, 0x138, 0x17F, 0x138, 0x138, 0x17F);
+			} else {
+				SetTextColor(0x1FF, 0x1FF, 0x1FF, 0x1FF, 0x1FF, 0x1FF)
+			}
+		}
+	}
+}
+
+state dead_state2 {
+	stateflag 0x100001
+	statusc 2
+	code () {}
+}
+
+sub event_handler_common(e, a) {
+	if (e == 0xC00) {
+		accevcstate(dead_state2);
+	}
+}

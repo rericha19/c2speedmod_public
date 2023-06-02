@@ -1,0 +1,135 @@
+
+expr TYPE_COUNT = 10
+
+// modes/types
+expr TYPE_CONTROLLED = 0
+expr TYPE_RANDOM_PER_LEVEL = 1
+expr TYPE_RANDOM_CHANGING = 2
+expr TYPE_RANDOM_CHANGING_NONPERIODIC = 3
+expr TYPE_RANDOM_WUMPA = 4
+expr TYPE_RANDOM_BOXES = 5
+expr TYPE_RANDOM_COLLECTIBLES = 6
+expr TYPE_RANDOM_EVERY_SPIN = 7
+expr TYPE_RANDOM_EVERY_WARP = 8
+expr TYPE_RANDOM_EVERY_RESPAWN = 9
+
+// periodical change modes limits
+expr PERIOD_RAND_MIN = 5
+expr PERIOD_RAND_MAX = 75
+expr PERIOD_MIN = 2
+expr PERIOD_MAX = 100
+
+// scale/speed limits, 0-255, player scale breaks at 190
+expr DEF_VAL = 100
+expr VAL_MIN_SCALE = 10
+expr VAL_MAX_SCALE = 200	
+expr VAL_MIN_SPEED = 0
+expr VAL_MAX_SPEED = 250
+
+// menu stuff
+expr PAUSED = GLOBAL_12
+expr MENU_VAL_CHANGE = 2
+expr MENU_SPEED = 4.0
+expr MENU_TIMER = 0.75s
+expr MENU_TIMER_2_TIMEOUT = 100
+
+// misc
+expr RESPAWN_TIMER = 48
+expr WARP_TIMER_READY = 5
+expr SEWER_HANGRAIL_SCA_LIMIT = 140
+
+// getter macros
+expr GET_RANGE_TYPE = ((GLOBAL_31 >> 28) & 0xF)		// range type
+expr GET_TYPE  		= ((GLOBAL_31 >> 24) & 0xF) 	// speedmod type
+expr GET_SPEED 		= ((GLOBAL_31 >> 16) & 0xFF) 	// speed modifier
+expr GET_MISCVAL	= ((GLOBAL_31 >> 8) & 0xFF)		// changing mode period OR per-warp prev val store
+expr GET_SCALE 		=  (GLOBAL_31 & 0xFF)			// scale modifier
+
+
+// setter subs
+sub set_range_type(n_type) {
+	GLOBAL_31 = GLOBAL_31 & 0x0FFFFFFF
+	GLOBAL_31 |= (n_type << 28)
+}
+
+sub set_typeval(n_type) {
+	GLOBAL_31 = GLOBAL_31 & 0xF0FFFFFF
+	GLOBAL_31 |= (n_type << 24)
+}
+
+sub set_player_speed(n_spd) {
+	GLOBAL_31 = GLOBAL_31 & 0xFF00FFFF
+	GLOBAL_31 |= (n_spd << 16)
+}
+
+sub set_miscval(n_val) {	
+	GLOBAL_31 = GLOBAL_31 & 0xFFFF00FF
+	GLOBAL_31 |= (n_val << 8)
+}
+
+sub set_player_scale(n_sca) {
+	GLOBAL_31 = GLOBAL_31 & 0xFFFFFF00
+	GLOBAL_31 |= n_sca
+}
+
+sub set_player_speed_and_scale(n_val) {
+	set_player_speed(n_val)
+	set_player_scale(n_val)
+}
+
+
+// transform random scale type into scale modifier value
+expr RANGE_TYPE_COUNT = 7
+
+expr RAND_MIN_CHANGE = 8
+expr RAND_MIN = 100 - RAND_MIN_CHANGE*(RANGE_TYPE_COUNT+1)
+
+expr RAND_MAX_CHANGE = 10
+expr RAND_MAX = 100 + RAND_MAX_CHANGE*(RANGE_TYPE_COUNT+1)
+
+inline sub get_rnd_scale_min_from_type(t) {	
+	misc = RAND_MIN + (t*RAND_MIN_CHANGE)
+}
+inline sub get_rnd_scale_max_from_type(t) {
+	misc = RAND_MAX - (t*RAND_MAX_CHANGE)
+}
+
+
+// text coloring/scaling stuff
+inline sub set_text_scale(modif) {
+	SetScale((0xA3*modif)/1.0, (0x103*modif)/1.0, 0x1000)
+}
+
+inline sub set_text_scale() {
+	set_text_scale(1.0)
+}
+
+sub TextFlash () {
+	SetTextColor(0x1FF, 0x1FF, 0x1FF, 0x1FF, 0x1FF, 0x1FF);
+}
+
+sub TextColor1_enabled (flash) {
+	if (!flash || frametime & 3)
+		SetTextColor(0x146, 0x190, 0x1FF, 0, 0, 0x1FF);
+	else
+		TextFlash();
+}
+
+sub TextColor2_enabled (flash) {
+	if (!flash || frametime & 3)
+		SetTextColor(0x1FF, 0x170, 0, 0x1FF, 0, 0);
+	else
+		TextFlash();
+}
+
+sub TextColor_disabled () {
+	SetTextColor(0xA0, 0x86, 0x64, 0xA0, 0x68, 0x10)
+}
+
+
+
+inline sub SoundSelect () {
+	soundpitch(0x7F)
+	sounddecay(0xF0)
+	soundplay([Mb10A], 0.5V)
+}

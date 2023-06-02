@@ -1,0 +1,867 @@
+#include "goolstdlib(2).gooc"	// older version of goolstdlib iirc
+#include "smod_util.gooc"
+
+// gooc -c2 -rpal SModC.gooc SModC.nsentry
+// #iflev 2/-l2 - warp room
+// #iflev t/-lt - bear levels
+// #iflev p/-lp - river levels
+// #iflev 6/-l6 - boss levels
+// #iflev z/-lz - sewer levels
+// #iflev g/-lg - dynamo levels
+// #iflev i/-li - jetpack levels
+// #iflev 7/-l7 - cortex
+
+#gool SModC 63 1
+
+#font FONT_SMALL[Cr20T]
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 //  
+#char 0x808080 0 1 1 0 608 16 16 16 400 0 // !
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // "
+#char 0x808080 0 1 1 0 1008 64 16 16 400 0 // #
+#char 0x808080 0 1 1 0 976 16 16 16 400 0 // $
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // %
+#char 0x141414 0 1 7 10 136 12 4 4 400 0 // &
+#char 0x808080 0 1 1 0 992 80 16 16 300 0 // '
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // (
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // )
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // *
+#char 0x808080 0 1 1 0 1008 96 16 16 400 0 // +
+#char 0x808080 0 1 1 0 992 64 16 16 300 0 // ,
+#char 0x808080 0 1 1 0 992 112 16 16 400 0 // -
+#char 0x808080 0 1 1 0 992 96 16 16 250 0 // .
+#char 0x808080 0 1 4 0 832 96 32 32 470 0 // /
+#char 0x808080 0 1 1 0 448 16 16 16 400 0 // 0
+#char 0x808080 0 1 1 0 464 16 16 16 400 0 // 1
+#char 0x808080 0 1 1 0 480 16 16 16 400 0 // 2
+#char 0x808080 0 1 1 0 496 16 16 16 400 0 // 3
+#char 0x808080 0 1 1 0 512 16 16 16 400 0 // 4
+#char 0x808080 0 1 1 0 528 16 16 16 400 0 // 5
+#char 0x808080 0 1 1 0 544 16 16 16 400 0 // 6
+#char 0x808080 0 1 1 0 560 16 16 16 400 0 // 7
+#char 0x808080 0 1 1 0 576 16 16 16 400 0 // 8
+#char 0x808080 0 1 2 0 592 16 16 16 400 0 // 9
+#char 0x808080 0 1 1 0 992 48 16 16 300 0 // :
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // ;
+#char 0x808080 0 1 4 0 416 16 32 16 800 0 // <
+#char 0x808080 0 3 3 0 416 8 8 8 400 0 // =
+#char 0x808080 0 1 4 0 384 16 32 16 800 0 // >
+#char 0x808080 0 1 1 0 992 32 16 16 400 0 // ?
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // @
+#char 0x808080 0 1 1 0 624 16 16 16 400 0 // A
+#char 0x808080 0 1 1 0 640 16 16 16 400 0 // B
+#char 0x808080 0 1 1 0 656 16 16 16 400 0 // C
+#char 0x808080 0 1 1 0 672 16 16 16 400 0 // D
+#char 0x808080 0 1 1 0 688 16 16 16 400 0 // E
+#char 0x808080 0 1 1 0 704 16 16 16 400 0 // F
+#char 0x808080 0 1 1 0 720 16 16 16 400 0 // G
+#char 0x808080 0 1 1 0 736 16 16 16 400 0 // H
+#char 0x808080 0 1 1 0 752 16 16 16 400 0 // I
+#char 0x808080 0 1 1 0 768 16 16 16 400 0 // J
+#char 0x808080 0 1 1 0 784 16 16 16 400 0 // K
+#char 0x808080 0 1 1 0 800 16 16 16 400 0 // L
+#char 0x808080 0 1 1 0 816 16 16 16 400 0 // M
+#char 0x808080 0 1 1 0 832 16 16 16 400 0 // N
+#char 0x808080 0 1 1 0 848 16 16 16 400 0 // O
+#char 0x808080 0 1 1 0 864 16 16 16 400 0 // P
+#char 0x808080 0 1 1 0 880 16 16 16 400 0 // Q
+#char 0x808080 0 1 1 0 896 16 16 16 400 0 // R
+#char 0x808080 0 1 1 0 912 16 16 16 400 0 // S
+#char 0x808080 0 1 1 0 928 16 16 16 400 0 // T
+#char 0x808080 0 1 1 0 944 16 16 16 400 0 // U
+#char 0x808080 0 1 1 0 960 48 16 16 400 0 // V
+#char 0x808080 0 1 1 0 960 32 16 16 400 0 // W
+#char 0x808080 0 1 1 0 960 16 16 16 400 0 // X
+#char 0x808080 0 1 1 0 976 48 16 16 400 0 // Y
+#char 0x808080 0 1 1 0 976 32 16 16 400 0 // Z
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // [
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // \
+#char 0x000000 0 0 0 0 0 0 1 1 400 420 // ]
+#char 0x808080 0 1 1 0 1008 80 16 16 400 0 // ^
+#char 0x808080 0 1 1 0 1008 112 16 16 400 0 // _
+#char 0x808080 0 1 1 0 992 80 16 16 300 0 // `
+
+#text STRINGS_ROW1					FONT_SMALL[Cr20T]
+"SPEED %d.%02d"
+"SCALE %d.%02d"
+"TYPE: CUSTOM, SEL/L2/R2                    /"
+"TYPE: PER LEVEL, %d.%02dX"
+"TYPE: PERIODIC %2dFR, %d.%02dX"
+"TYPE: RANDOM %2dFR, %d.%02dX"
+"TYPE: WUMPA, %d.%02dX"
+"TYPE: CRATES, %d.%02dX"
+"TYPE: ITEMS, %d.%02dX"
+"TYPE: SPIN, %d.%02dX"
+"TYPE: WARP, %d.%02dX"
+"TYPE: RESPAWN, %d.%02dX"
+
+#text STRINGS2						FONT_SMALL[Cr20T]
+"RANGE: %d.%02dX-%d.%02dX"
+"O"
+
+#spawn S_PLAYER_ALT			PlayerAltMaster		// 0
+#spawn S_RIVER_GUARD		RiverGuard			// 1
+#spawn S_MENU_SPEED			Menu
+#spawn S_MENU_SCALE			Menu
+#spawn S_BOSS_GUARD			BossGuard			// 4
+#spawn S_RANGE_INDICATOR	RangeIndicator		// 5
+#spawn S_WARP_CIRCLE		WarpCircle			// 6
+
+/* member variables */
+/* some only exist to have less variables on the stack */
+var	// PLAYER VARS
+	FruitCount,
+	LifeCount,
+	BoxCount,
+	BonusFruitCount,
+	BonusLifeCount,
+	BonusBoxCount,
+
+	MenuCurrRow,		// current menu row
+	SpeedModType,		// speed mod mode (custom/items/spin etc)
+	MenuIdleTimer,		// menu idle timer
+	RowCount, 			// menu row count / y offset multiplier
+	VelMod, 			// player vel modifier
+	Sca, 				// player scale (modified)
+	DoSpeedAlt, 		// player speed change is allowed (not warping/respawning etc)
+
+	// PLAYER VARS
+	SpinTime,
+	SpinDuration,
+
+	// previous frame's collectible inventory (temp)
+	PrevTemp1,
+	PrevTemp2,
+	PrevTemp3,
+	PrevTemp4,
+
+	// previous frame's player coords
+	Pxold,
+	Pyold,
+	Pzold,
+
+	// what warp in the warp room player was/is
+	CurrWarp,
+	PrevWarp,
+	WarpTimer,			// warp wait thing to prevent changing scale prematurely
+
+	PrevSpinning,		// previous frame spinning state
+	PrevSpawning, 		// previous frame spawning state
+	RespawnTimer,		// for bear level respawn
+
+	ChangedScaLastFrame,// dynamo level shrinking death
+	PrevSca,			// dynamo level previous player scale
+	Shrinking 			// dynamo level stores whether player is shrinking
+/* member variables end*/
+
+
+// dynamo shrink stuff
+#iflev g
+	inline sub level_g_remember_that_sca_changed() {
+		ChangedScaLastFrame = 1
+	}
+	inline sub level_g_remember_that_sca_changed_child() {
+		parent->ChangedScaLastFrame = 1
+	}
+	inline sub level_g_reset_that_sca_changed() {
+		ChangedScaLastFrame = 0
+	}
+	inline sub level_g_reset_shrinking() {
+		Shrinking = 0
+	}
+#else 
+	inline sub level_g_remember_that_sca_changed(){ }
+	inline sub level_g_remember_that_sca_changed_child(){ }
+	inline sub level_g_reset_that_sca_changed(){ }
+	inline sub level_g_reset_shrinking(){ }
+#endif
+
+// warp init stuff
+#iflev 2
+	inline sub level_2_warp_init() {
+		WarpTimer = 0
+		PrevWarp = GET_MISCVAL	
+	}
+#else
+	inline sub level_2_warp_init(){ }	
+#endif
+
+// used to randomize scale/speed change period in random changing mode
+sub set_miscval_rand() {
+	set_miscval(rand(PERIOD_RAND_MIN, PERIOD_RAND_MAX + 1))
+}
+
+// change player scale to current set scale
+sub update_player_sca() {
+	if (player->scalex < 0)
+		player->scalex = -Sca;
+	else
+	player->scalex = Sca;
+	player->scaley = Sca
+	player->scalez = Sca
+}
+
+// hide/show depending on whether it is paused, set position
+sub updateVisibility() {
+	if (spawn == S_PLAYER_ALT)
+		x = -254.0;
+	if (spawn == S_MENU_SCALE)
+		x = 58.0;
+	if (spawn == S_MENU_SPEED)
+		x = 163.0;
+
+	if (spawn == S_RANGE_INDICATOR) {
+		x = 90.0
+	} else {
+		y = -116.0
+	}
+
+	z = 0
+	if (PAUSED)
+		statusb |= FLAG_INVISIBLE;
+	else
+		statusb = statusb & ~FLAG_INVISIBLE;
+}
+
+// text init
+sub Init2D() {
+	statusb = 0x40000
+	vfx = (vfx & -0x100) | 6
+	zindex = 128
+
+	// warp room zindex tweak (the middle ring thing would zfight otherwise)
+	#iflev 2
+		zindex = 255
+	#endif
+
+	set_text_scale(0.6)
+	animseq = getanim(STRINGS_ROW1)
+}
+
+// get random value in the scale/speed interval player selected
+sub get_random_from_min_max() {
+	var rangeType = GET_RANGE_TYPE
+	get_rnd_scale_max_from_type(rangeType)
+	var max = misc
+	get_rnd_scale_min_from_type(rangeType)
+
+	var rnd_sca_sp = rand(misc, max + 1)
+	misc = rnd_sca_sp
+}
+
+// set random scale/speed
+inline sub set_rnd_sca_sp() {
+	save(misc) {
+		get_random_from_min_max()
+		set_player_speed_and_scale(misc)
+		level_g_remember_that_sca_changed();
+	}
+}
+
+// set random scale/speed, avg it with prev value to make the change less sudden
+sub set_rnd_sca_sp_avg_with_prev() {
+	save(misc) {
+		get_random_from_min_max()
+		set_player_speed_and_scale((GET_SCALE + 2 * misc) / 3)
+		level_g_remember_that_sca_changed()
+	}
+}
+
+// save count of things
+inline sub save_counts() {
+	FruitCount = player->FruitCount
+	BonusFruitCount = player->BonusFruitCount
+
+	BoxCount = getfield(player, 0x4900)
+	BonusBoxCount = getfield(player, 0x4500)
+
+	LifeCount = player->LifeCount
+	BonusLifeCount = getfield(player, 0x4400)
+
+	PrevTemp1 = CRYSTALPOOL1
+	PrevTemp2 = CRYSTALPOOL2
+	PrevTemp3 = GEMPOOL1
+	PrevTemp4 = GEMPOOL2
+}
+
+// check whether wumpa count increased
+inline sub check_wumpa_increased() {
+	var0 = (player->FruitCount > FruitCount || player->BonusFruitCount > BonusFruitCount)		
+}
+
+// check whether box count increased
+inline sub check_boxes_increased() {
+	var0 = (getfield(player, 0x4900) > BoxCount || getfield(player, 0x4500) > BonusBoxCount)		
+}
+
+// check whether life count increased
+inline sub check_lives_increased() {
+	var0 = (player->LifeCount > LifeCount || getfield(player, 0x4400) > BonusLifeCount)		
+}
+
+// check whether crystal/gem count increased
+inline sub check_items_increased() {
+	var0 = (PrevTemp1 < CRYSTALPOOL1 ||
+			PrevTemp2 < CRYSTALPOOL2 ||
+			PrevTemp3 < GEMPOOL1 ||
+			PrevTemp4 < GEMPOOL2)		
+}
+
+// mess with rand seed depending on curr level
+inline sub rand_scramble() {
+	var i = 1.0
+	do {
+		var a = rand(-i, i)
+		i += 1.0
+	} while (i < GLOBAL_0)
+}
+
+// bear/path & dynamo respawn timer
+#iflev gt7
+	inline sub level_gt_reset_respawn_timer() {
+		RespawnTimer = RESPAWN_TIMER
+	}
+	inline sub level_gt_dec_respawn_timer() {
+		if (RespawnTimer)
+			RespawnTimer -= 1;
+	}
+#else
+	inline sub level_gt_reset_respawn_timer() { }
+	inline sub level_gt_dec_respawn_timer() { }
+#endif
+
+
+expr INDICATOR_HIDDEN = 0
+expr INDICATOR_SHOW = 1
+expr INDICATOR_HIDE = 2
+
+expr Y_VISIBLE = -116.0
+expr Y_HIDDEN = -211.0
+
+// text that shows rand range
+state RangeIndicator {
+	statusc 0x22
+	stateflag 0x140003
+	code() {
+		Init2D()
+		TextColor1_enabled(false)
+		animseq = getanim(STRINGS2)
+		y = Y_VISIBLE
+		DoSpeedAlt = 40
+		#iflev 2
+		spawn2(SModC, S_WARP_CIRCLE)
+		#endif 
+		while (1) {
+			updateVisibility()
+			var rangeType = GET_RANGE_TYPE
+			get_rnd_scale_max_from_type(rangeType)
+			var max = misc
+			get_rnd_scale_min_from_type(rangeType)
+
+			var s3 = max % 100
+			var s4 = max / 100
+			var s1 = misc % 100
+			var s2 = misc / 100
+			playframe(0)
+		}
+	}
+
+	trans
+	{
+		if (buttonhold(PAD_TRIANGLE) || buttonpress(PAD_TRIANGLE) || STATUS_FIRSTFRAME || DoSpeedAlt) {
+			MenuCurrRow = INDICATOR_SHOW;	// 'state'
+			WarpTimer = frametime			// 'prev statetime'
+		}
+		if (DoSpeedAlt) {
+			DoSpeedAlt -= 1
+		}
+
+		// move onscreen/offscreen
+		unless(STATUS_FIRSTFRAME)
+		{
+			if (MenuCurrRow == INDICATOR_HIDDEN) {
+				y = Y_HIDDEN;
+			}
+			else if (MenuCurrRow == INDICATOR_SHOW) {
+				// dont hide in warp room
+				#iflev 2
+				#else
+				if (frametime - WarpTimer >= 1.5s)
+					MenuCurrRow = INDICATOR_HIDE;
+				#endif
+				y = seek(y, Y_VISIBLE, 8.0)
+			}
+			else if (MenuCurrRow == INDICATOR_HIDE) {
+				if (y == Y_HIDDEN)
+					MenuCurrRow = INDICATOR_HIDDEN;
+				y = seek(y, Y_HIDDEN, 8.0)
+			}
+		}
+	}
+}
+
+
+// custom mode speed/scale menu row object
+state Menu {
+	statusc 0x22
+	stateflag 0x140003
+
+	code() {
+		Init2D()
+		var curr = DEF_VAL
+
+		while (1) {
+			updateVisibility()
+			if (spawn == S_MENU_SCALE) {
+				TextColor_disabled()
+				curr = GET_SCALE
+
+				if (parent->MenuCurrRow == 1) {
+					TextColor2_enabled(true)
+					if (buttonhold(PAD_L2) && curr > VAL_MIN_SCALE) {
+						curr = curr - MENU_VAL_CHANGE
+					}
+					else if (buttonhold(PAD_R2) && curr < VAL_MAX_SCALE) {
+						curr = curr + MENU_VAL_CHANGE
+					}
+					set_player_scale(curr)
+					level_g_remember_that_sca_changed_child()
+				}
+				var s1 = curr % 100
+				var s2 = curr / 100
+				playframe(1.0)
+			} else {
+				TextColor_disabled()
+				curr = GET_SPEED
+
+				if (parent->MenuCurrRow == 2) {
+					TextColor2_enabled(true)
+					if (buttonhold(PAD_L2) && curr > VAL_MIN_SPEED) {
+						curr = curr - MENU_VAL_CHANGE
+					}
+					else if (buttonhold(PAD_R2) && curr < VAL_MAX_SPEED) {
+						curr = curr + MENU_VAL_CHANGE
+					}
+					set_player_speed(curr)
+				}
+				var s1 = curr % 100
+				var s2 = curr / 100
+				playframe(0)
+			}
+		}
+	}
+}
+
+// object that modifies player scale/speed depending on settings in GLOBAL_31
+// see smod_util.gooc for how the vars are stored/retrieved
+state PlayerAltMaster {
+	statusc 0x22
+	stateflag 0x140003
+
+	code() {
+		rotx = 0
+		roty = 0
+		rotz = 0
+		rand_scramble()
+
+		// pcsx boot
+		if (GLOBAL_31 == 0) {
+			set_player_speed_and_scale(DEF_VAL)
+			set_miscval(25)
+			set_range_type(4)
+
+			var t = 0			
+			if (buttonhold(PAD_L2))
+				t = TYPE_RANDOM_EVERY_SPIN;
+			if (buttonhold(PAD_L1))
+				t = TYPE_RANDOM_EVERY_RESPAWN;
+			if (buttonhold(PAD_R1))
+				t = TYPE_RANDOM_WUMPA;
+			if (buttonhold(PAD_R2))
+				t = TYPE_RANDOM_COLLECTIBLES;
+			set_typeval(t)
+		}
+
+		// init stuff
+		SpeedModType = GET_TYPE
+		RowCount = 2
+		animframe = 2.0 + (SpeedModType << 8)
+		if (SpeedModType == TYPE_CONTROLLED) {
+			RowCount = 3
+			spawn2(SModC, S_MENU_SPEED)
+			spawn2(SModC, S_MENU_SCALE)
+		} else if (SpeedModType == TYPE_RANDOM_PER_LEVEL) {
+			set_rnd_sca_sp()
+		} else if (SpeedModType == TYPE_RANDOM_CHANGING_NONPERIODIC) {
+			set_miscval_rand()
+		}
+
+		if (SpeedModType != TYPE_CONTROLLED) {
+			spawn2(SModC, S_RANGE_INDICATOR)
+		}
+
+		Init2D()
+		TextColor1_enabled(false)
+		MenuIdleTimer = 0
+		MenuCurrRow = 0
+		PrevSpinning = false
+		PrevSpawning = false
+
+		level_gt_reset_respawn_timer()			// bear
+		level_g_remember_that_sca_changed()		// dynamo
+		level_g_reset_shrinking()				// dynamo
+		level_2_warp_init()						// warp init
+
+		do {
+			// save 'previous frame' variables/state
+			Pxold = player->x
+			Pyold = player->y
+			Pzold = player->z
+			var pathprold = player->pathprog
+			save_counts()
+
+			var mval = GET_MISCVAL
+			var rnd_col = (SpeedModType == TYPE_RANDOM_COLLECTIBLES)
+			var getsc = GET_SCALE
+
+			// some modes have a different set of variables to push to printf
+			if (SpeedModType == TYPE_CONTROLLED) {
+				playframe(animframe)
+			} else if (SpeedModType == TYPE_RANDOM_CHANGING || SpeedModType == TYPE_RANDOM_CHANGING_NONPERIODIC) {
+				var s1 = getsc % 100
+				var s2 = getsc / 100
+				var s3 = mval - (frametime % mval)
+				playframe(animframe)
+			} else {
+				var s1 = getsc % 100
+				var s2 = getsc / 100
+				playframe(animframe)
+			}
+
+
+			// player move diff
+			var xdiff = (player->x - Pxold)
+			var ydiff = (player->y - Pyold)
+			var zdiff = (player->z - Pzold)
+
+			// various mode handling stuff (checks whether trigger event happened)
+			if (SpeedModType == TYPE_RANDOM_EVERY_SPIN) {
+				var player_alive = (GLOBAL_4 & 2)
+				var spin_vars_check = (player->frametime - player->SpinTime) >= player->SpinDuration
+				var other_check = (player->stateflag & 0x90) == 0x90
+				// sewer hangrail spin check
+				#iflev z
+					other_check |= (player->stateflag == 0x800045)
+				#endif
+				// jetpack spin check
+				#iflev i7
+					other_check |= (player->stateflag == 0x44000010)
+				#endif
+
+				var spinning = true
+				if (spin_vars_check || !player_alive || !other_check)
+					spinning = false;
+
+				if (!PrevSpinning && spinning)
+					set_rnd_sca_sp_avg_with_prev();
+
+				PrevSpinning = spinning
+			}
+
+			if (SpeedModType == TYPE_RANDOM_WUMPA || rnd_col) {
+				check_wumpa_increased()
+				if (var0) {
+					set_rnd_sca_sp_avg_with_prev()
+				}
+			}
+			if (SpeedModType == TYPE_RANDOM_BOXES || rnd_col) {
+				check_boxes_increased()
+				if (var0) {
+					set_rnd_sca_sp_avg_with_prev()
+				}
+			}
+			if (rnd_col) {
+				check_items_increased()
+				misc = var0
+				check_lives_increased()
+				if (misc || var0) {
+					set_rnd_sca_sp_avg_with_prev()
+				}
+			}
+			if ((SpeedModType == TYPE_RANDOM_CHANGING || SpeedModType == TYPE_RANDOM_CHANGING_NONPERIODIC) && !(frametime % mval)) {
+				set_rnd_sca_sp_avg_with_prev()
+				SoundPitchDefault()
+				soundplay([bap0A], 0.4V)
+				if (SpeedModType == TYPE_RANDOM_CHANGING_NONPERIODIC) {
+					set_miscval_rand()
+				}
+			}
+
+			// warproom-only check whether player crossed warp rooms
+			#iflev 2
+			{
+				WarpTimer += 1
+				if (WarpTimer > WARP_TIMER_READY)
+					WarpTimer = WARP_TIMER_READY;
+				if (SpeedModType == TYPE_RANDOM_EVERY_WARP) {
+					if (WarpTimer == WARP_TIMER_READY) {
+						CurrWarp = 0
+						var py = player->y
+						if (py < 8000.0) {
+							CurrWarp = 1
+						} else if (py < 70000.0) {
+							CurrWarp = 2
+						} else if (py < 110000.0) {
+							CurrWarp = 3
+						} else if (py < 140000.0) {
+							CurrWarp = 4
+						} else if (py < 185000.0) {
+							CurrWarp = 5
+						} else {
+							CurrWarp = 6
+						}
+
+						if (PrevWarp != CurrWarp) {
+							set_rnd_sca_sp()
+						}
+
+						PrevWarp = CurrWarp
+						set_miscval(PrevWarp)
+					}
+				}
+			}
+			#endif
+
+			// update scale
+			Sca = (GET_SCALE * 1S) / 100
+			#iflev g
+				if (Shrinking < 2) {
+					update_player_sca()
+				}
+			#else
+				update_player_sca()
+			#endif
+
+			// respawn/elevator checks
+			DoSpeedAlt = true
+			// respawn
+			if (!(player->stateflag != 0x8001 && player->stateflag != 0x42408))
+				DoSpeedAlt = false;
+			// warp room elev check
+			#iflev 2
+				if (player->stateflag == 0x2001)
+					DoSpeedAlt = false;
+			#endif
+			// bear drown death
+			#iflev t
+				if (player->stateflag == 0x20004020)
+					DoSpeedAlt = false;
+			#endif
+			// distance check for warps
+			if (abs(xdiff) > 10m || abs(ydiff) > 10m || abs(zdiff) > 10m)
+				DoSpeedAlt = false;
+
+			// update player position according to current speed, if deemed possible/viable
+			VelMod = GET_SPEED
+			if (DoSpeedAlt) {				
+				// bear/path only, checks whether player is moving along a path
+				#iflev t7
+				{
+					// change pathprog if yes, otherwise do the usual player pos change
+					var did_pathprog_patch = false
+					if (player->pathlen > 1.0 && player->pathprog > 1.0) {
+						if (RespawnTimer == 0 && (player->pathprog - pathprold) > 0.1) {
+							player->pathprog = pathprold + (((player->pathprog - pathprold) * VelMod) / 100);
+							did_pathprog_patch = true
+						}
+					}
+					if (!did_pathprog_patch) {
+						player->x = Pxold + ((xdiff * VelMod) / 100)
+						player->z = Pzold + ((zdiff * VelMod) / 100)
+					}
+					player->y = Pyold + ((ydiff * VelMod) / 100)
+				}
+				#else
+				{
+					// regular player position change adjustment
+					player->x = Pxold + ((xdiff * VelMod) / 100)
+					player->y = Pyold + ((ydiff * VelMod) / 100)
+					player->z = Pzold + ((zdiff * VelMod) / 100)
+				}
+				#endif
+			}			
+		} while (1)
+	}
+
+	event(e, a) {
+		// respawn handler check
+		if (e == EventRespawn) {
+			level_gt_reset_respawn_timer()
+			level_g_reset_shrinking()
+			if (SpeedModType == TYPE_RANDOM_EVERY_RESPAWN) {
+				set_rnd_sca_sp();
+			}
+		}
+	}
+
+	trans {
+		unless(STATUS_FIRSTFRAME) {
+			updateVisibility()
+			// no game overs
+			if (player->LifeCount == 0) {
+				player->LifeCount = 1.0
+			}
+
+			// dynamo shrinking fix reset
+			#iflev g
+				var pl_sca_x = player->scalex
+				if (!ChangedScaLastFrame && pl_sca_x != PrevSca && RespawnTimer < (RESPAWN_TIMER - 10) || Shrinking) {
+					if (Shrinking < 2)
+						Shrinking += 1;
+				} else {
+					Shrinking = 0
+				}
+				level_g_reset_that_sca_changed()
+				PrevSca = pl_sca_x
+			#endif
+
+			// sewer hangrail patch/cap
+			#iflev z
+			if ((player->stateflag & 0x45) == 0x45) {
+				if (GET_SCALE > SEWER_HANGRAIL_SCA_LIMIT) {
+					set_player_speed_and_scale(SEWER_HANGRAIL_SCA_LIMIT)
+				}
+			}
+			#endif			
+
+			if (!PAUSED) {
+				// bear/dynamo
+				level_gt_dec_respawn_timer()
+
+				// softlock failsafe kill thing
+				if (buttonhold(PAD_R1) && buttonhold(PAD_R2) && buttonhold(PAD_L1) && buttonhold(PAD_L2)) {
+					interrupter = player->creator		// remove mask
+					sendevent(Event3, interrupter, 100.0)
+					sendevent(Event3, interrupter, 100.0)
+					// re-random scale if not in custom mode
+					if (SpeedModType != TYPE_CONTROLLED) {
+						set_rnd_sca_sp()
+					}
+					// player->LifeCount += 1.0 		// life count
+					sendevent(Event12, player, 100.0)	// kill
+				}
+
+				// custom sca/vel only
+				if (SpeedModType == TYPE_CONTROLLED) {
+					// change current row
+					if (buttonpress(PAD_SELECT)) {
+						MenuCurrRow = (MenuCurrRow + 1) % RowCount
+					}
+
+					// idle menu closing
+					// u left the menu open and ur not interacting for xyz frames
+					if (MenuCurrRow > 0) {
+						MenuIdleTimer += 1
+						if (buttonhold(PAD_L2) || buttonhold(PAD_R2)) {
+							MenuIdleTimer = 0
+						}
+					} else {
+						MenuIdleTimer = 0
+					}
+					if (MenuIdleTimer == MENU_TIMER_2_TIMEOUT) {
+						MenuCurrRow = 0
+						MenuIdleTimer = 0
+					}
+				} else {					
+					// warp room range type change
+					#iflev 2
+						var type = GET_RANGE_TYPE				
+						if (buttonpress(PAD_CIRCLE)) {
+							type = (type + 1) % RANGE_TYPE_COUNT
+							SoundSelect()
+							set_range_type(type)
+						}
+					#endif
+				}
+			}
+		}
+	}
+}
+
+// river guard to prevent getting launched too far after getting out of a jetboard
+state RiverGuard {
+	code() {
+		#iflev p
+		do {
+			playnull()
+			if (player->z < z && player->statusc == 0x4001023) { // state_100
+				player->z = z
+			}
+		} while (1)
+		#endif
+	}
+}
+
+// boss guard (roo/k.bros)
+state BossGuard {
+	code() {
+		#iflev 6
+		do {
+			playnull()
+			var lvl = GLOBAL_0
+
+			// roo
+			if (lvl == 0x600) {
+				var dist_max = 5.7m
+				if (player->x > (x + dist_max)) {
+					player->x = x + dist_max;
+				}
+				if (player->z > (z + dist_max)) {
+					player->z = z + dist_max;
+				}
+				if (player->x < (x - dist_max)) {
+					player->x = x - dist_max;
+				}
+				if (player->z < (z - dist_max)) {
+					player->z = z - dist_max;
+				}
+			}
+
+			// komodo bros
+			if (lvl == 0x800) {
+				var dist = distance(player, 3)
+				var dist_max = 0xC0000
+				if (dist > dist_max) {
+					var angle = atan2(player->trans)
+					player->x = ((dist_max / 1.0) * sin(angle)) >> 4
+					player->z = ((dist_max / 1.0) * cos(angle)) >> 4
+				}
+			}
+
+			// tiny and ngin have no guard and dont use -l6 variant
+			// cortex uses cortex variant and no guard
+		} while (1)
+		#endif
+	}
+}
+
+// warp room random range change indicator (circle)
+state WarpCircle {	
+	statusc 0x22
+	stateflag 0x140003
+	
+	code () {
+		#iflev 2
+		do {
+			Init2D()
+			animseq = getanim(STRINGS2)
+			SetTextColor(0x1FF, 0x190, 0x146, 0x1FF, 0, 0);
+			y = parent->y
+			x = parent->x - 20.0
+			var modif = 0.6
+			SetScale((0x103*modif)/1.0, (0x103*modif)/1.0, 0x1000)
+			updateVisibility()
+			playframe(1.0)
+		} while (1)
+		#endif
+	}
+}

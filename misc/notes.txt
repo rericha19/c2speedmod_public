@@ -1,0 +1,141 @@
+
+WillC patch - in all levels with willc:
+   inst 74 replace with jump to the end
+   
+   // usually 5531
+   sub end_sub() {
+		// old_ins_74 some variable init
+		spawn2(63, 0)
+   }
+   
+game exe patch
+	modpack exe, startlives changed to an immediate - 8 instead of 4 as well - which frees global_31
+	disables alt PAL warps 2D-30, only 02 exists
+	modpack exe also has some other tweaks related to eg sound and mask form but they arent drastic 
+		or important in this context
+	uses the same name/code as vanilla c2 pal so the saves are interchangable
+	
+lselc
+    mod menu/ level selector in title screen 3C
+	konami kode UUDDLRLR SQUARE to allow changing debug (og debug var)
+	
+smodc
+	entry/objects responsible for the speed/scale modifying
+	also has some minor patch objects such as river guard
+	has couple alt forms for levels that require special treatment
+		such as river lvls, bear lvls or warp room 
+		it isnt necessary but it is more optimal to not include everything in all levels
+
+some levels have an entry moved from the chunk willc is in to another one because it wouldnt fit
+some levels were missing bap0A that is used in some modes
+levels have smodc (basic) and basic willc patch by defaukt (ins_74 replaced with jal 5531),
+	exceptions are listed
+	
+
+--------------------------------------------------------------------------------------------------------
+title screen 0x3C
+	- replaced with level / mod setting select, based on the original 3C file
+	- lse2c
+  
+warp room 0x02
+	- smodc -l2 warp variant elev check before speed mod, alt zindex on menu, per-warp mode checks
+
+01 turtle woods 0x1E	
+	
+02 snow go 0x0E
+
+03 hang eight 0x19
+	- smodc -lp river variant
+	- several river guards 63-1
+
+04 the pits 0x1F
+	
+05 crash dash 0x18
+	
+B1 roo 0x06
+	- smodc -l6 boss variant
+	- boss guard entity 63-4
+	
+--------------------------------------------------------------------------------------------------------
+06 snow biz 0x11
+
+07 air crash 0x20
+	- smodc -lp river variant
+	- several river guards 63-1
+
+08 bear it 0x1D
+	- smodc -lt bear variant 
+	- moved last orca and a crate near a tnt to make it more beatable
+
+09 crash crush 0x1B
+	- alt newer?/longer willc patch
+
+10 eel deal 0x23
+	- smodc -lz sewer variant
+	- touching hangrails caps player scale/speed at 1.40
+	
+B2 komodo bros 0x08
+	- smodc -l6 boss variant
+	- boss guard entity 63-4
+	
+--------------------------------------------------------------------------------------------------------
+11 plant food 0x21
+	- smodc -lp river variant
+	- several river guards 63-1
+	- alt newer?/longer willc patch
+	
+12 sewer or later 0x0A
+	
+13 bear down 0x22
+	- smodc -lt bear variant
+	
+14 road to ruin 0x16
+	
+15 unbearable 0x17
+	- smodc -lt bear variant
+	- alt newer?/longer willc patch
+	
+B3 taz tiger 0x03
+	
+--------------------------------------------------------------------------------------------------------
+16 hangin out 0x0D
+	- smodc -lz sewer variant
+	
+17 diggin it 0x15
+	
+18 cold hard crash 0x13
+	
+19 ruination 0x0F
+	- alt newer?/longer willc patch
+	
+20 bee havin 0x24
+	
+B4 ngin 0x09
+	
+--------------------------------------------------------------------------------------------------------
+21 piston it 0x10
+	- smodc -lg dynamo variant
+	
+22 rock it 0x12
+	- smodc -li jetpack variant
+	- alt newer?/longer willc patch
+	
+23 night fight 0x0C
+	
+24 pack attack 0x1A
+	- smodc -li jetpack variant
+	- alt newer?/longer willc patch
+	
+25 spaced out 0x26
+	- smodc -lg dynamo variant
+	
+26 totally bear 0x25
+	- smodc -lt bear variant
+
+27 totally fly 0x27
+	
+B5 cortex 0x07
+	- smodc -l7 path-restricted movement & jetpack stuff variant
+
+--------------------------------------------------------------------------------------------------------
+ 

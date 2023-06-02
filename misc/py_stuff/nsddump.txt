@@ -1,0 +1,849 @@
+****************************************************************************************************
+Crash 2/3 level entry exporter/importer/reformatter/resizer/rotater made by Averso.
+If any issue pops up (instructions are unclear or it crashes), DM me @ Averso#5633 (Discord).
+Type "HELP" for list of commands and their format. Commands >ARE NOT< case sensitive.
+It is recommended to provide valid data as there may be edge cases that are unaccounted for.
+You can drag & drop the files and folders to this window instead of copying in the paths
+Most stuff works only for Crash 2 !!!!
+****************************************************************************************************
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S0000002.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: CardC  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: CHeOC  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S0000003.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: BosBC
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: TazOC
+44: Taz3C  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S0000006.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: RRooC
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: BosBC
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S0000007.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: CortC  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: BosBC
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S0000008.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: BosBC
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: KimoC  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S0000009.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: BosBC
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NGinC  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S000000A.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: SeweC  13: ScrbC  14: PlatC  15: NONE!
+16: WeldC  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S000000C.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: DraFC  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: FflOC  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S000000D.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: SeweC  13: ScrbC  14: PlatC  15: NONE!
+16: WeldC  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: MecWC  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S000000E.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: SealC  25: PengC  26: NONE!  27: PorcC
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: SmasC  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S0\S000000F.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: FiFaC
+ 8: NONE!   9: PartC  10: MonkC  11: GoriC
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: RPltC  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: LighC  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000010.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: FredC  54: NONE!  55: DynOC
+56: APusC  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000011.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: SealC  25: PengC  26: NONE!  27: PorcC
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: SmasC  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000012.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: SpaOC
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: SLabC  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000013.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: SealC  25: PengC  26: NONE!  27: PorcC
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: SmasC  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000015.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: BeeOC  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: PlanC  39: AlpOC
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: LJckC  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000016.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: FiFaC
+ 8: NONE!   9: PartC  10: MonkC  11: GoriC
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: RPltC  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000017.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: TurtC   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: SwarC   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: ArmaC  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: ABanC  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: AlpOC
+40: NONE!  41: BoudC  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000018.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: AlpOC
+40: NONE!  41: BoudC  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S0000019.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: PlanC  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: RivOC
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S000001A.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: SpaOC
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: SLabC  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S000001B.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: AlpOC
+40: NONE!  41: BoudC  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S000001C.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: ArmaC  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: IntOC  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S000001D.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: SealC  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S000001E.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: TurtC   3: FruiC
+ 4: DispC   5: DoctC   6: BirdC   7: NONE!
+ 8: SwarC   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: ArmaC  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: OstrC  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: LighC  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S1\S000001F.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: TurtC   3: FruiC
+ 4: DispC   5: DoctC   6: BirdC   7: NONE!
+ 8: SwarC   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: ArmaC  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000020.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: PlanC  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: RivOC
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000021.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: PlanC  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: RivOC
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000022.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: SealC  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000023.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: SeweC  13: ScrbC  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: MecWC  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000024.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: TurtC   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: SwarC   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: BeeOC  19: NONE!
+20: ArmaC  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: ABanC  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: PlanC  39: AlpOC
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: LJckC  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000025.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000026.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: PlatC  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: FredC  54: NONE!  55: DynOC
+56: APusC  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000027.NSD
+Input the path to the NSD file:
+ 0: WillC   1: WarpC   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: RatOC  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: BoxsC  35: NONE!
+36: NONE!  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: DraFC  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: FflOC  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000028.NSD
+Input the path to the NSD file:
+ 0: NONE!   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: NONE!  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: WinOC  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S0000029.NSD
+Input the path to the NSD file:
+ 0: NONE!   1: NONE!   2: NONE!   3: NONE!
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: JunOC
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: NONE!  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: WinOC  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S000002D.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: CardC  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: CHeOC  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S000002E.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: CardC  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: CHeOC  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S2\S000002F.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: CardC  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: CHeOC  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S3\S0000030.NSD
+Input the path to the NSD file:
+ 0: WillC   1: NONE!   2: NONE!   3: FruiC
+ 4: DispC   5: DoctC   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: CardC  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: ShadC  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: CHeOC  37: LenFC  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: BerOC  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: NONE!  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S3\S000003B.NSD
+Input the path to the NSD file:
+ 0: NONE!   1: NONE!   2: NONE!   3: NONE!
+ 4: DispC   5: NONE!   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: NONE!  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: NONE!  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: NONE!
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: GamOC  63: NONE!
+Done.
+
+nsd C:\Users\samo1\Desktop\C2_scalemod\S3\S000003C.NSD
+Input the path to the NSD file:
+ 0: NONE!   1: NONE!   2: NONE!   3: NONE!
+ 4: DispC   5: NONE!   6: NONE!   7: NONE!
+ 8: NONE!   9: PartC  10: NONE!  11: NONE!
+12: NONE!  13: NONE!  14: NONE!  15: NONE!
+16: NONE!  17: NONE!  18: NONE!  19: NONE!
+20: NONE!  21: NONE!  22: NONE!  23: NONE!
+24: NONE!  25: NONE!  26: NONE!  27: NONE!
+28: NONE!  29: NONE!  30: NONE!  31: NONE!
+32: NONE!  33: NONE!  34: NONE!  35: NONE!
+36: NONE!  37: NONE!  38: NONE!  39: NONE!
+40: NONE!  41: NONE!  42: NONE!  43: NONE!
+44: LSe2C  45: NONE!  46: NONE!  47: NONE!
+48: NONE!  49: NONE!  50: NONE!  51: TitOC
+52: NONE!  53: NONE!  54: NONE!  55: NONE!
+56: NONE!  57: NONE!  58: NONE!  59: NONE!
+60: NONE!  61: NONE!  62: GamOC  63: Int1C
+Done.
+
