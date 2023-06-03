@@ -29,7 +29,7 @@ but the most interesting are following files found in **misc/gooc**:
 - **notes.txt** - file detailing the solution (e.g. changes made in willc/exe and differences between levels)
 - **goocLSe2C.gooc** and **SModC.gooc** - source files for the title screen and the actual player object manipulator
 - **smod_util.gooc** - utility file that defines constants, generic subs and subs for setting/getting values
-- **goolstdlib(2).gooc** - version of standard gool library used with previous files
+- **goolstdlib(2).gooc** - version of standard gool library by gooc files
 - **comp.bat** - batch file used to compile output GOOL nsentry files that are used in actual levels, 
                - uses mandude's gooc compiler, outputs several versions used by levels with special behavior (bear, hangrail etc)
 
