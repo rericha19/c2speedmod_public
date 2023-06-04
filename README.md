@@ -15,6 +15,7 @@ https://youtu.be/KAK_-GjRT0g
 You can apply an xdelta patch (e.g. **c2pal_speedmod_v1.xdelta**) using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
 The original file is the European (PAL) release of Crash 2 (.bin). Warning: overwrites the original file. 
 It is recommended to make sure you are using the same original file, on Win10 you can do it using **certutil**.
+
 **IF IT DOES NOT WORK, DISABLE CHECKSUM VALIDATION IN DELTAPATCHER OPTIONS"**
 ```
 PS C:\...stuff> certutil -hashfile "Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin" sha256
