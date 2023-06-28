@@ -12,19 +12,20 @@ It is a small Crash 2 romhack that allows you to play at various player speeds a
 https://youtu.be/KAK_-GjRT0g
 
 # How to use it and play 
+The releases consist of delta files that are to be applied to the original Crash 2 PAL (european) release (.bin file).
+
 ## Online romhacking.com patch method
-You can apply the xdelta file using the https://www.romhacking.net/patch/ site. The original file is the European Crash 2 (.bin) file.   
+You can apply a patch using the https://www.romhacking.net/patch/ site.   
 Original ROM file checksums:   
 CRC32:  f5e2ec49   
 MD5:    10dabebd6a3efc1e1e9db4f8f3b864cb   
 SHA-1:  b077862d2c6e1b8060c2eae2fe82e708b228de7c   
 
 ## DeltaPatcher method (alternative, offline)
-You can apply an xdelta patch (e.g. **c2pal_speedmod_v1.xdelta**) using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
-The original file is the European (PAL) release of Crash 2 (.bin). Warning: overwrites the original file. 
+You can apply a patch (e.g. **c2pal_speedmod_v1.xdelta**) using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
+**Warning: overwrites the original file. IF IT DOES NOT WORK, DISABLE CHECKSUM VALIDATION IN DELTAPATCHER OPTIONS**
 It is recommended to make sure you are using the same original file, on Win10 you can do it using **certutil**.
 
-**IF IT DOES NOT WORK, DISABLE CHECKSUM VALIDATION IN DELTAPATCHER OPTIONS"**
 ```
 PS C:\...stuff> certutil -hashfile "Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin" sha256
 SHA256 hash of Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin:
