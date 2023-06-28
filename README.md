@@ -11,7 +11,15 @@ It is a small Crash 2 romhack that allows you to play at various player speeds a
 # Video
 https://youtu.be/KAK_-GjRT0g
 
-# How to use it and play
+# How to use it and play 
+## Online romhacking.com patch method
+You can apply the xdelta file using the https://www.romhacking.net/patch/ site. The original file is the European Crash 2 (.bin) file.   
+Original ROM file checksums:   
+CRC32:  f5e2ec49   
+MD5:    10dabebd6a3efc1e1e9db4f8f3b864cb   
+SHA-1:  b077862d2c6e1b8060c2eae2fe82e708b228de7c   
+
+## DeltaPatcher method (alternative, offline)
 You can apply an xdelta patch (e.g. **c2pal_speedmod_v1.xdelta**) using a program called DeltaPatcher (https://github.com/marco-calautti/DeltaPatcher/releases).
 The original file is the European (PAL) release of Crash 2 (.bin). Warning: overwrites the original file. 
 It is recommended to make sure you are using the same original file, on Win10 you can do it using **certutil**.
@@ -25,6 +33,7 @@ SHA256 hash of Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin:
 sha256 after patch (v1): `63f2e859d3a08398229a8ce0bed9a454c86206f9e363919e5338b67837fe6b39` 
 
 sha256 after patch (v2): `ea8cb5f5390d13868bc74062e1a69f6f8871dfec966125b9ad3f86038f0f0820`
+
 
 # Info
 The files used to create the object responsible for player scale/change, as well as documentation can be found in **/misc**.
