@@ -23,6 +23,7 @@ SHA256 hash of Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin:
 363ef6e65479ee6fc67cbc285262ff697356ab58b5ca5765c82258666650cf8b
 ```
 sha256 after patch (v1): `63f2e859d3a08398229a8ce0bed9a454c86206f9e363919e5338b67837fe6b39` 
+sha256 after patch (v2): `ea8cb5f5390d13868bc74062e1a69f6f8871dfec966125b9ad3f86038f0f0820`
 
 # Info
 The files used to create the object responsible for player scale/change, as well as documentation can be found in **/misc**.
@@ -34,6 +35,9 @@ but the most interesting are following files found in **misc/gooc**:
 - **goolstdlib(2).gooc** - version of standard gool library by gooc files
 - **comp.bat** - batch file used to compile output GOOL nsentry files that are used in actual levels, 
                - uses mandude's gooc compiler, outputs several versions used by levels with special behavior (bear, hangrail etc)
+
+# Changelog
+v2 - warp room uses L2 instead of circle to toggle between range types
 
 # How to make changes and experiment
 In order to update the player modifier object in a level, you need to replace the level's SModC entry using CrashEdit or Dr.NSF.
