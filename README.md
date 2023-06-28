@@ -23,6 +23,7 @@ SHA256 hash of Crash Bandicoot 2 - Cortex Strikes Back (Europe).bin:
 363ef6e65479ee6fc67cbc285262ff697356ab58b5ca5765c82258666650cf8b
 ```
 sha256 after patch (v1): `63f2e859d3a08398229a8ce0bed9a454c86206f9e363919e5338b67837fe6b39` 
+
 sha256 after patch (v2): `ea8cb5f5390d13868bc74062e1a69f6f8871dfec966125b9ad3f86038f0f0820`
 
 # Info
