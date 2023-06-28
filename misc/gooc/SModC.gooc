@@ -98,6 +98,11 @@
 "RANGE: %d.%02dX-%d.%02dX"
 "O"
 
+#iflev 2
+#sprite BUTTONS						[Cr1WT]
+#tex 0x808080 0 3 12 12 640 32 24 16  // L2
+#endif
+
 #spawn S_PLAYER_ALT			PlayerAltMaster		// 0
 #spawn S_RIVER_GUARD		RiverGuard			// 1
 #spawn S_MENU_SPEED			Menu
@@ -775,7 +780,7 @@ state PlayerAltMaster {
 					// warp room range type change
 					#iflev 2
 						var type = GET_RANGE_TYPE				
-						if (buttonpress(PAD_CIRCLE)) {
+						if (buttonpress(PAD_L2)) {
 							type = (type + 1) % RANGE_TYPE_COUNT
 							SoundSelect()
 							set_range_type(type)
@@ -853,14 +858,16 @@ state WarpCircle {
 		#iflev 2
 		do {
 			Init2D()
-			animseq = getanim(STRINGS2)
+			animseq = getanim(BUTTONS)
 			SetTextColor(0x1FF, 0x190, 0x146, 0x1FF, 0, 0);
-			y = parent->y
+			// y = parent->y - 20.0
 			x = parent->x - 20.0
 			var modif = 0.6
-			SetScale((0x103*modif)/1.0, (0x103*modif)/1.0, 0x1000)
+			//SetScale((0x103*modif)/1.0, (0x103*modif)/1.0, 0x1000)
+			SetScale(3*0x1B0/5, 3*0x120/5, 0x100)
 			updateVisibility()
-			playframe(1.0)
+			y = parent->y - 6.0
+			playframe(0)
 		} while (1)
 		#endif
 	}
